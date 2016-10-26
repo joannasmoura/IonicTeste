@@ -1,0 +1,14 @@
+<ion-view view-title="Concretagem">
+  
+  <ion-content>
+    <button ng-click="redirect()"class="button button-outline button-block button-balanced">
+      Criar novo
+    </button>
+      
+    <ion-list>
+      <ion-item ng-repeat="concretagens in concretagens" href="#/app/view/{{concretagens.id}}">
+        <i class="icon icon ion-alert-circled"></i>{{concretagens.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
